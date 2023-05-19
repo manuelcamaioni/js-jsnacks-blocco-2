@@ -23,4 +23,5 @@ while (insertedNumber !== rightGuess){
     ++attempts;
 }
 
+console.log('Hai indovinato!');
 console.log(`Numero tentativi: ${attempts}`);
