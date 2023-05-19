@@ -6,14 +6,14 @@ const numberList = [];
 let sum = 0;
 
 while (sum < 50){
-    let insertNum = parseInt(prompt('Inserisci un numero.'));
+    const insertNum = parseInt(prompt('Inserisci un numero.'));
     if(isNaN(insertNum) || isNaN(sum)){
         parseInt(prompt('Errore, inserire valori validi.'));
     }
 
     numberList.push(insertNum);
 
-    sum = sum + insertNum;
+    sum += insertNum;
 }
 
 console.log('somma totale: ' + sum);
