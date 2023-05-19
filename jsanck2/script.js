@@ -11,7 +11,7 @@ while (insertedNumber !== rightGuess){
  insertedNumber = parseInt(prompt('Inserisci un numero casuale tra 1 e 100.'));
 
     if(isNaN(insertedNumber) || insertedNumber > 100 || insertedNumber < 1){
-    insertedNumber = prompt('Inserisci un numero valido.');
+    insertedNumber = parseInt(prompt('Inserisci un numero valido.'));
     }
     
     
