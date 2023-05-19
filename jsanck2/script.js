@@ -3,15 +3,15 @@
 // Una volta che ha indovinato, stampiamo in console il numero di tentativi totali.
 
 let insertedNumber = 0;
-const rightGuess = 26;
 let attempts = 0;
+const rightGuess = 26;
 
 while (insertedNumber !== rightGuess){
 
- insertedNumber = parseInt(prompt('Inserisci un numero casuale tra 1 e 100'));
+ insertedNumber = parseInt(prompt('Inserisci un numero casuale tra 1 e 100.'));
 
     if(isNaN(insertedNumber) || insertedNumber > 100 || insertedNumber < 1){
-    insertedNumber = prompt('Inserisci un numero valido');
+    insertedNumber = prompt('Inserisci un numero valido.');
     }
     
     
@@ -19,7 +19,7 @@ while (insertedNumber !== rightGuess){
     if(insertedNumber > rightGuess){
         console.log('Il numero da indovinare è minore del numero inserito.');
     } else if(insertedNumber < rightGuess){
-        console.log('Il numero da indovinare è maggiore del numero inserito');
+        console.log('Il numero da indovinare è maggiore del numero inserito.');
     }
 
     ++attempts;
