@@ -5,7 +5,6 @@
 let insertedNumber = 0;
 let attempts = 0;
 const rightGuess = Math.floor(Math.random() * 100) + 1;
-;
 
 while (insertedNumber !== rightGuess){
 
@@ -14,8 +13,6 @@ while (insertedNumber !== rightGuess){
     if(isNaN(insertedNumber) || insertedNumber > 100 || insertedNumber < 1){
     insertedNumber = parseInt(prompt('Inserisci un numero valido.'));
     }
-    
-    
 
     if(insertedNumber > rightGuess){
         console.log('Il numero da indovinare è minore del numero inserito.');
