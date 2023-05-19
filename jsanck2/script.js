@@ -2,11 +2,8 @@
 // Ogni volta che sbaglia stampiamo in console un messaggio che gli/le dice se il numero da indovinare è maggiore o minore.
 // Una volta che ha indovinato, stampiamo in console il numero di tentativi totali.
 
-let insertedNumber = 0;parseInt(prompt('Inserisci un numero casuale tra 1 e 100'));
+let insertedNumber = 0;
 const rightGuess = 26;
-
-
-
 let attempts = 0;
 
 while (insertedNumber !== rightGuess){
