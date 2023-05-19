@@ -7,8 +7,8 @@ let sum = 0;
 
 while (sum < 50){
     let insertNum = parseInt(prompt('Inserisci un numero.'));
-    if(isNaN(insertNum)){
-        parseInt(prompt('Inserisci un numero valido.'));
+    if(isNaN(insertNum) || isNaN(sum)){
+        parseInt(prompt('Errore, inserire valori validi.'));
     }
 
     numberList.push(insertNum);
