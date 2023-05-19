@@ -4,7 +4,8 @@
 
 let insertedNumber = 0;
 let attempts = 0;
-const rightGuess = 26;
+const rightGuess = Math.floor(Math.random() * 100) + 1;
+;
 
 while (insertedNumber !== rightGuess){
 
