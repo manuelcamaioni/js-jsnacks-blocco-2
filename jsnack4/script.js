@@ -5,6 +5,14 @@
 const insertedWord1 = prompt('Inserisci una parola.');
 const insertedWord2 = prompt('Inserisci una parola.');
 
+
+
+/**
+ * 
+ * @param word1 first string input to check
+ * @param word2 second string input to check
+ * @returns check if the strings have the same characters length, if so return true, false otherwise
+ */
 function lengthStringCheck (word1, word2){
     if(word1.length === word2.length){
         console.log(word1, word2);
