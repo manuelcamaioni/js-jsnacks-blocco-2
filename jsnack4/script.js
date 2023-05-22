@@ -18,10 +18,10 @@ function lengthStringCheck (word1, word2){
         console.log(word1, word2);
         return true;
     } else if (word1.length > word2.length){
-        console.log(word1);
+        console.log(word1 + 'is the longest.');
         return false;
     }
-    console.log(word2);
+    console.log(word2 + 'is the longest.');
     return false;
 }
 
