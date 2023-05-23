@@ -1,10 +1,10 @@
 const ulElement = document.querySelector('ul');
 
 function createElement(tagName){
-    const liElement = document.createElement(tagName);
-    liElement.innerHTML += 'ciao';
+    const DOMelement = document.createElement(tagName);
+    DOMelement.innerHTML += 'ciao';
     // className.classList.add('deleted');
-    return liElement;
+    return DOMelement;
 
 }
 
