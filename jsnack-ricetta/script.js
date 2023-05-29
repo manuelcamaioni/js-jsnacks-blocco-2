@@ -3,7 +3,6 @@
 
 const createBtnElement = document.getElementById('create-button');
 const addBtnElement = document.getElementById('add-button');
-
 const inputElement = document.querySelector('input');
 inputElement.value = '';
 const listElement = document.getElementById('list');
@@ -16,20 +15,20 @@ const listElement = document.getElementById('list');
 //     return element;
 // }
 let counter = 0;
-addBtnElement.addEventListener('click', function(){
-    
+addBtnElement.addEventListener('click', function () {
+
     const liElement = document.createElement('li');
-    
+
     counter++;
     liElement.innerHTML += inputElement.value;
     listElement.appendChild(liElement);
     inputElement.value = '';
 });
 
-createBtnElement.addEventListener('click', function(){
-    if(counter >= 2){
+createBtnElement.addEventListener('click', function () {
+    if (counter >= 2) {
         document.querySelector('div.image-wrapper').innerHTML = '<img src="https://source.unsplash.com/700x400/?meal" alt="Random dish image">';
-    } else{
+    } else {
         alert('Inserisci almeno 2 ingredienti');
     }
 });
