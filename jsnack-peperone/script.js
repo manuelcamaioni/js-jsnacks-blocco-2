@@ -3,8 +3,8 @@ const list = [];
 function pepperObject(){
     const pepper = {
         type : '',
-        weight : (Math.random() * 3 + 1).toFixed(2),
-        length : (Math.random() * 70 + 1).toFixed(2),
+        weight : (Math.random() * 3 + 1),
+        length : (Math.random() * 70 + 1),
     }
     return pepper;
 }
@@ -23,4 +23,4 @@ for(let a = 0; a < list.length; a++){
 
 }
 
-console.log(totalWeight);
+console.log(totalWeight.toFixed(2) + 'kg');
