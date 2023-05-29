@@ -17,28 +17,24 @@
 
 function generateCode(){
     const codeLength = 6;
-    const array = [];
+    let result = '';
     const stringChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const stringNum = "0123456789";
     for(let i = 0; i < codeLength / 2; i++){
-        array.push(stringChar.charAt(Math.floor(Math.random() * stringChar.length)));
+        result += stringChar.charAt(Math.floor(Math.random() * stringChar.length));
     }
     for(let i = 0; i < codeLength / 2; i++){
-        array.push(Math.floor(Math.random() * stringNum.length));
+        result += Math.floor(Math.random() * stringNum.length);
     }
 
-    return array;
+    return result;
 
 }
-
-console.log(generateCode());
 
 function averagePoints(){
     const average = Math.floor(Math.random() * (50 + 1));
     return average;
 }
-
-console.log(averagePoints());
 
 function averageThreePoints(){
     const average = Math.floor(Math.random() * (100 + 1));
