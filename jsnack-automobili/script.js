@@ -95,10 +95,10 @@ cars.forEach((car)=>{
 
 console.log(aDiesel);
 
-const otherCars = [];
-cars.filter((car) => {
+const otherCars = cars.filter((car) => {
     if(car.alimentazione !== 'diesel' && car.alimentazione !== 'benzina')
-        otherCars.push(car);
-})
+        return car;
+});
+
 
 console.log(otherCars);
