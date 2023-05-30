@@ -97,7 +97,7 @@ console.log(aDiesel);
 
 const otherCars = [];
 cars.filter((car) => {
-    if(!car.alimentazione === 'diesel' && !car.alimentazione === 'benzina')
+    if(car.alimentazione !== 'diesel' && car.alimentazione !== 'benzina')
         otherCars.push(car);
 })
 
