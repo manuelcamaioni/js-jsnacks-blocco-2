@@ -91,7 +91,7 @@ const aDiesel = [];
 cars.forEach((car)=>{
     if(car.alimentazione === 'diesel')
         aDiesel.push(car);
-})
+});
 
 console.log(aDiesel);
 
